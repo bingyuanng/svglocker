@@ -1,6 +1,6 @@
 # SVGLOCKER
 ## Description
-A simple package that provides a CLI tool for optimising SVG and create a SVG sprites.
+A simple package that provides a CLI tool for optimising SVG and create a SVG sprites using svgo.
 
 ## Usage
 ```
