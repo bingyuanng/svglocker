@@ -1,0 +1,22 @@
+{
+  "name": "svglocker",
+  "version": "1.0.0",
+  "description": "Optimized svg and sprites generation the right way",
+  "bin": {
+    "svglocker": "bin/locker.js"
+  },
+  "scripts": {
+    "build-example": "svgo --config=\"svgo-config.json\" -f example/icons/ && svglocker example/icons/ example/build/sprites.svg"
+  },
+  "keywords": [
+    "svg",
+    "svgo"
+  ],
+  "author": "BingYuan",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.3",
+    "svgo": "^1.2.2"
+  }
+}
