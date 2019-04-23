@@ -6,3 +6,5 @@ A simple package that provides a CLI tool for optimising SVG and create a SVG sp
 ```
 svglocker [input_path] [output_path]/sprites.svg 
 ```
+
+\* example svg can only be viewed when serving in a server / localhost
