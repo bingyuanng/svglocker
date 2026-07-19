@@ -1,22 +1,37 @@
 {
   "name": "svglocker",
   "version": "1.0.0",
-  "description": "Optimized svg and sprites generation the right way",
+  "description": "Optimize SVGs and generate an SVG sprite",
+  "type": "module",
   "bin": {
     "svglocker": "bin/locker.js"
   },
+  "exports": {
+    ".": "./lib/core.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "svgo.config.mjs",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
-    "build-example": "svgo --config=\"svgo-config.json\" -f example/icons/ && svglocker example/icons/ example/build/sprites.svg"
+    "build-example": "node bin/locker.js example/icons example/build/sprites.svg --map example/build/icons.ts --prefix icon-"
   },
   "keywords": [
     "svg",
-    "svgo"
+    "svgo",
+    "sprite"
   ],
   "author": "BingYuan",
   "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
   "dependencies": {
-    "chalk": "^2.4.2",
-    "cheerio": "^1.0.0-rc.3",
-    "svgo": "^1.2.2"
+    "chalk": "^5.6.2",
+    "cheerio": "^1.2.0",
+    "svgo": "^4.0.2"
   }
 }
